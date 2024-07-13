@@ -7,13 +7,15 @@ PROJECTS = [
         'id': 1,
         'title': 'Random Color Generator App',
         'description': 'Generates random color, also provides hex-codes for all colors, made using React-Native.',
-        'timeStamp': 'Jan 2024'
+        'timeStamp': 'Jan 2024',
+        'url': 'https://snack.expo.dev/@kuchin_potta/random-color-generator'
     },
     {
         'id': 2,
         'title': 'Haptic Fedback Dice Rolling App',
         'description': 'Double dice rolling feature with a haptic feedback, made using React-Native.',
-        'timeStamp': 'Jan 2024'
+        'timeStamp': 'Jan 2024',
+        'url': 'https://snack.expo.dev/@kuchin_potta/roll-the-dice---haptic-feedback'
     },
     {
         'id': 3,

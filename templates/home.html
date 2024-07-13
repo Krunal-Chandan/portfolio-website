@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html  data-bs-theme="dark">
 <head>
-  <title>Careers Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Krunal Chandan</title>
 </head>
 <body>
-  <h1>Search Careers</h1>
-  <h2>This is just a demo thing.....</h2>
+  
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4">Krunal Chandan</h1>
+    <!-- <h2>Demo Portfolio Till this line is removed..... </h2> -->
+    <div class="row border-bottom" style="margin-bottom:18px;padding-bottom:20px;">
+      <div class="col-4">
+        <img src='https://2eeffc02-146f-44c5-8140-fad8f0b07390-00-dt9jc38nem6z.worf.replit.dev/static/krunalChandan.jpg' width="400" height="600" style="margin: auto auto; object-fit:cover;">
+      </div>
+      
+      <div class="col-8">
+        <h2 class="text-center mt-2 mb-4">About Me</h2>
+          <p class="lead">I am Krunal Chandan, a dedicated and talented student at YCCE, Nagpur, pursuing a degree in Computer Science and Design. I have a strong foundation in coding and a diverse skill set. Here’s a bit about me:
+            <ul class="lead">
+              <li><strong>Programming Languages:</strong> I have excelled in Python, my main language, along with C.</li>
+              <li><strong>Web Development:</strong> I am proficient in HTML, CSS, JavaScript, and TypeScript.</li>
+              <li><strong>Mobile App Development:</strong> I have experience in React-Native and basic Flutter.</li>
+              <li><strong>Frameworks:</strong> I am familiar with Flask and enjoy working with it.</li>
+              <li><strong>Databases:</strong> I have a basic understanding of SQLite.</li>
+              <li><strong>Operating Systems:</strong> I have a basic understanding of Android and Windows.</li>
+            </ul>
+        </p>
+        <p class="lead">
+          I am a 5-star coder on HackerRank, demonstrating my problem-solving abilities and understanding of algorithms and data structures.<br><br>
+  
+          My commitment to continuous learning and improvement is evident through my active participation in coding challenges and projects. My versatility and drive make me a valuable asset in any collaborative environment, and I am always eager to adapt to new technologies to stay ahead in the rapidly evolving field of computer science and design.</p>
+      </div>
+    </div>
+
+    
+    <h2 class="text-center mt-2 mb-4">Projects</h2>
+    <div>
+      {% for project in projects %}
+        {% include 'projectItem.html' %}
+      {% endfor %}
+      </div>
+    <div class="text-center">
+      <button type="button" class="btn btn-outline-primary" onclick="window.location.href='mailto:krunal.devv@gmail.com';">Contact Me</button>
+      <p class="mt-4">&copy; 2024, Krunal Chandan</p>
+    </div>
+
+    
+</div>
 </body>
 </html>
